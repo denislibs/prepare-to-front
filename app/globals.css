@@ -1037,6 +1037,27 @@ body {
   background-clip: text;
 }
 
+/* Исправление отображения inline code в заголовках */
+.markdown-content h1 code,
+.markdown-content h2 code,
+.markdown-content h3 code,
+.markdown-content h4 code {
+  -webkit-text-fill-color: var(--accent) !important;
+  background-clip: border-box !important;
+  -webkit-background-clip: border-box !important;
+  background: var(--bg-card) !important;
+  color: var(--accent) !important;
+  display: inline-block;
+  vertical-align: baseline;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-weight: 600;
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--border);
+  font-size: 0.9em;
+  line-height: 1.2;
+}
+
 .markdown-content h1 {
   font-size: 1.875rem;
   border-bottom: 1px solid var(--border);
