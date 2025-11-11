@@ -1,0 +1,774 @@
+{
+  "topic": "angular",
+  "title": "Тест по Angular",
+  "questions": [
+    {
+      "id": "angular-1",
+      "text": "Что такое Angular?",
+      "type": "multiple-choice",
+      "options": [
+        "Платформа и фреймворк для создания одностраничных приложений на TypeScript",
+        "Библиотека для работы с DOM",
+        "Язык программирования",
+        "Инструмент для сборки проектов"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "angular-2",
+      "text": "В чем разница между AngularJS и Angular?",
+      "type": "multiple-choice",
+      "options": [
+        "Нет разницы",
+        "AngularJS (версия 1.x) использует JavaScript и контроллеры, Angular (2+) использует TypeScript и компоненты",
+        "AngularJS новее чем Angular",
+        "AngularJS использует TypeScript, Angular использует JavaScript"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "angular-3",
+      "text": "В чем разница между `constructor` и `ngOnInit`?",
+      "type": "multiple-choice",
+      "options": [
+        "Нет разницы",
+        "`ngOnInit` вызывается раньше `constructor`",
+        "`constructor` вызывается при создании экземпляра класса, `ngOnInit` вызывается после инициализации компонента",
+        "`constructor` используется только в сервисах"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "angular-4",
+      "text": "Что такое Data Binding в Angular?",
+      "type": "multiple-choice",
+      "options": [
+        "Метод для работы с базами данных",
+        "Способ хранения данных",
+        "Библиотека для работы с данными",
+        "Механизм синхронизации данных между компонентом и шаблоном"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": "angular-5",
+      "text": "В чем разница между AOT и JIT?",
+      "type": "multiple-choice",
+      "options": [
+        "AOT компилирует приложение во время сборки, JIT компилирует во время выполнения",
+        "Нет разницы",
+        "AOT компилирует во время выполнения, JIT во время сборки",
+        "AOT используется только для разработки"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "angular-6",
+      "text": "Что такое Change Detection в Angular?",
+      "type": "multiple-choice",
+      "options": [
+        "Метод для обнаружения ошибок",
+        "Механизм отслеживания изменений в данных и обновления представления",
+        "Способ оптимизации производительности",
+        "Библиотека для работы с изменениями"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "angular-7",
+      "text": "Что такое `ngZone`?",
+      "type": "multiple-choice",
+      "options": [
+        "Директива для работы с зонами",
+        "Модуль для работы с событиями",
+        "Сервис для управления зоной выполнения, которая отслеживает асинхронные операции",
+        "Компонент для отображения зон"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "angular-8",
+      "text": "Что такое внедрение зависимостей (dependency injection) в Angular?",
+      "type": "multiple-choice",
+      "options": [
+        "Метод для импорта модулей",
+        "Способ создания компонентов",
+        "Библиотека для работы с зависимостями",
+        "Паттерн проектирования, при котором зависимости предоставляются извне, а не создаются внутри класса"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": "angular-9",
+      "text": "Что такое директивы в Angular?",
+      "type": "multiple-choice",
+      "options": [
+        "Классы, которые добавляют поведение к элементам DOM",
+        "Компоненты без шаблона",
+        "Сервисы для работы с DOM",
+        "Модули для работы с элементами"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "angular-10",
+      "text": "В чем разница между `Promise` и `Observable` в Angular?",
+      "type": "multiple-choice",
+      "options": [
+        "Нет разницы",
+        "`Observable` может возвращать множество значений и поддерживает отмену, `Promise` возвращает одно значение",
+        "`Promise` может возвращать множество значений",
+        "`Observable` работает только синхронно"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "angular-11",
+      "text": "В чем разница между `declarations`, `providers` и `import` в NgModule?",
+      "type": "multiple-choice",
+      "options": [
+        "Все три работают одинаково",
+        "`declarations` - сервисы, `providers` - компоненты, `import` - директивы",
+        "`declarations` - компоненты/директивы/пайпы модуля, `providers` - сервисы, `import` - другие модули",
+        "`declarations` - модули, `providers` - компоненты, `import` - сервисы"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "angular-12",
+      "text": "В чем разница между `RouterModule.forRoot()` и `RouterModule.forChild()`?",
+      "type": "multiple-choice",
+      "options": [
+        "Нет разницы",
+        "`forChild()` используется в корневом модуле",
+        "`forRoot()` используется только для ленивой загрузки",
+        "`forRoot()` используется в корневом модуле, `forChild()` в дочерних модулях"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": "angular-13",
+      "text": "В чем разница между `@ViewChild()` и `@ContentChild()`?",
+      "type": "multiple-choice",
+      "options": [
+        "`@ViewChild()` получает элемент из шаблона компонента, `@ContentChild()` из проектируемого контента",
+        "Нет разницы",
+        "`@ContentChild()` получает элемент из шаблона",
+        "Оба получают элементы из проектируемого контента"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "angular-14",
+      "text": "Что такое View Encapsulation?",
+      "type": "multiple-choice",
+      "options": [
+        "Метод для скрытия компонентов",
+        "Механизм изоляции стилей компонента от глобальных стилей",
+        "Способ инкапсуляции данных",
+        "Библиотека для работы со стилями"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "angular-15",
+      "text": "В чем разница между `BehaviorSubject`, `ReplaySubject` и `AsyncSubject`?",
+      "type": "multiple-choice",
+      "options": [
+        "Нет разницы",
+        "Все три хранят все значения",
+        "`BehaviorSubject` хранит текущее значение, `ReplaySubject` хранит последние N значений, `AsyncSubject` хранит только последнее значение",
+        "Все три хранят только последнее значение"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "angular-16",
+      "text": "Как работает `ChangeDetectionStrategy.onPush`?",
+      "type": "multiple-choice",
+      "options": [
+        "Компонент проверяется всегда",
+        "Компонент никогда не проверяется",
+        "Компонент проверяется только при инициализации",
+        "Компонент проверяется на изменения только когда изменяются входные свойства или события"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": "angular-17",
+      "text": "Что такое пайп (`pipe`) в Angular?",
+      "type": "multiple-choice",
+      "options": [
+        "Класс для преобразования данных в шаблоне",
+        "Метод для работы с HTTP запросами",
+        "Сервис для работы с данными",
+        "Директива для работы с элементами"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "angular-18",
+      "text": "Что такое `HttpClient` в Angular?",
+      "type": "multiple-choice",
+      "options": [
+        "Компонент для отображения HTTP данных",
+        "Сервис для выполнения HTTP запросов с поддержкой RxJS Observable",
+        "Директива для работы с HTTP",
+        "Модуль для работы с сетью"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "angular-19",
+      "text": "Для чего используется связка `ngFor` и `trackBy`?",
+      "type": "multiple-choice",
+      "options": [
+        "Для фильтрации списков",
+        "Для сортировки списков",
+        "Для оптимизации рендеринга списков, `trackBy` помогает Angular отслеживать элементы",
+        "Для группировки списков"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "angular-20",
+      "text": "В чем разница между компонентом и директивой в Angular?",
+      "type": "multiple-choice",
+      "options": [
+        "Нет разницы",
+        "Директива имеет шаблон, компонент нет",
+        "Компонент используется только для сервисов",
+        "Компонент имеет шаблон и стили, директива только добавляет поведение к элементам"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": "angular-21",
+      "text": "Методы жизненного цикла Angular компонента?",
+      "type": "multiple-choice",
+      "options": [
+        "ngOnChanges, ngOnInit, ngDoCheck, ngAfterContentInit, ngAfterContentChecked, ngAfterViewInit, ngAfterViewChecked, ngOnDestroy",
+        "Только ngOnInit и ngOnDestroy",
+        "Только ngOnInit, ngAfterViewInit, ngOnDestroy",
+        "Только ngOnChanges и ngOnInit"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "angular-22",
+      "text": "Что такое декораторы в TypeScript?",
+      "type": "multiple-choice",
+      "options": [
+        "Функции для декорирования объектов",
+        "Специальные функции, которые добавляют метаданные к классам, методам, свойствам",
+        "Методы для работы с классами",
+        "Библиотека для TypeScript"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "angular-23",
+      "text": "Назовите плюсы использования Angular?",
+      "type": "multiple-choice",
+      "options": [
+        "Только TypeScript",
+        "Только полный фреймворк",
+        "TypeScript, полный фреймворк, DI, мощная CLI, большая экосистема, хорошая документация",
+        "Только DI"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "angular-24",
+      "text": "Назовите минусы использования Angular?",
+      "type": "multiple-choice",
+      "options": [
+        "Нет минусов",
+        "Только крутая кривая обучения",
+        "Только большой размер бандла",
+        "Крутая кривая обучения, большой размер бандла, избыточность для простых проектов, сложность для новичков"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": "angular-25",
+      "text": "Для чего нужны директивы `<ng-template>`, `<ng-container>`, `<ng-content>`?",
+      "type": "multiple-choice",
+      "options": [
+        "`ng-template` - шаблон для условного рендеринга, `ng-container` - группировка без DOM элемента, `ng-content` - проекция контента",
+        "Все три для проекции контента",
+        "Все три для условного рендеринга",
+        "Нет разницы"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "angular-26",
+      "text": "Что такое динамические компоненты в Angular?",
+      "type": "multiple-choice",
+      "options": [
+        "Компоненты, которые изменяются автоматически",
+        "Компоненты, которые создаются и вставляются в DOM программно во время выполнения",
+        "Компоненты с динамическими стилями",
+        "Компоненты с динамическими данными"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "angular-27",
+      "text": "Назовите последовательность действий для отображения динамического компонента?",
+      "type": "multiple-choice",
+      "options": [
+        "Только создать компонент",
+        "Только вставить компонент",
+        "Создать компонент через ComponentFactoryResolver, создать ViewContainerRef, вставить компонент",
+        "Автоматически отображается"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "angular-28",
+      "text": "Основные формы привязки данных в Angular?",
+      "type": "multiple-choice",
+      "options": [
+        "Только Interpolation и Property Binding",
+        "Только Event Binding и Two-way Binding",
+        "Только Property Binding",
+        "Interpolation, Property Binding, Event Binding, Two-way Binding"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": "angular-29",
+      "text": "Типы стратегий загрузки в Angular?",
+      "type": "multiple-choice",
+      "options": [
+        "Eager loading (жадная), Lazy loading (ленивая), Preloading (предзагрузка)",
+        "Только Eager loading",
+        "Только Lazy loading",
+        "Только Preloading"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "angular-30",
+      "text": "Что такое роутинг и как его создать в Angular?",
+      "type": "multiple-choice",
+      "options": [
+        "Механизм для работы с URL",
+        "Механизм навигации между компонентами. Создается через RouterModule, Routes, RouterOutlet",
+        "Механизм для работы с данными",
+        "Создается автоматически"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "angular-31",
+      "text": "Что такое интерполяция в Angular?",
+      "type": "multiple-choice",
+      "options": [
+        "Синтаксис для работы с событиями",
+        "Синтаксис для работы с формами",
+        "Синтаксис `{{ }}` для отображения данных компонента в шаблоне",
+        "Синтаксис для работы с директивами"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "angular-32",
+      "text": "Жизненный цикл в Angular Router?",
+      "type": "multiple-choice",
+      "options": [
+        "Только NavigationStart и NavigationEnd",
+        "Только GuardsCheckStart",
+        "Только ResolveStart",
+        "NavigationStart, RoutesRecognized, GuardsCheckStart, ResolveStart, NavigationEnd, NavigationCancel, NavigationError"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": "angular-33",
+      "text": "Когда нужно использовать `ngrx/store`?",
+      "type": "multiple-choice",
+      "options": [
+        "Для управления сложным состоянием приложения, когда нужна предсказуемость и отладка",
+        "Всегда",
+        "Только для больших приложений",
+        "Только для маленьких приложений"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "angular-34",
+      "text": "Разница между умным и презентационным компонентами?",
+      "type": "multiple-choice",
+      "options": [
+        "Нет разницы",
+        "Умный компонент управляет данными и логикой, презентационный только отображает данные",
+        "Презентационный управляет данными, умный только отображает",
+        "Оба управляют данными"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "angular-35",
+      "text": "Что такое template variable? Как ее использовать?",
+      "type": "multiple-choice",
+      "options": [
+        "Переменная в компоненте",
+        "Переменная в сервисе",
+        "Переменная в шаблоне, создается через `#name`, используется для доступа к элементу или директиву",
+        "Глобальная переменная"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "angular-36",
+      "text": "Как можно хранить данные в Angular?",
+      "type": "multiple-choice",
+      "options": [
+        "Только сервисы",
+        "Только компоненты",
+        "Только LocalStorage",
+        "Сервисы, компоненты, LocalStorage, SessionStorage, State Management (ngrx), Cookies"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": "angular-37",
+      "text": "Когда нужно использовать стандартные (template driven), а когда реактивные (reactive) формы?",
+      "type": "multiple-choice",
+      "options": [
+        "Template driven для простых форм, reactive для сложных форм с валидацией и динамическими полями",
+        "Всегда template driven",
+        "Всегда reactive",
+        "Нет разницы"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "angular-38",
+      "text": "Как внедрить сервис в Angular приложение?",
+      "type": "multiple-choice",
+      "options": [
+        "Только создать сервис",
+        "Создать сервис с декоратором @Injectable, добавить в providers модуля или компонента, инжектировать через constructor",
+        "Только добавить в providers",
+        "Только инжектировать через constructor"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "angular-39",
+      "text": "Как улучшить производительность Angular приложения?",
+      "type": "multiple-choice",
+      "options": [
+        "Только OnPush стратегия",
+        "Только lazy loading",
+        "OnPush стратегия, lazy loading, trackBy, AOT компиляция, оптимизация change detection, tree shaking",
+        "Только AOT компиляция"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "angular-40",
+      "text": "Разница между компонентом и модулем в Angular?",
+      "type": "multiple-choice",
+      "options": [
+        "Нет разницы",
+        "Модуль - логическая единица UI, компонент - контейнер",
+        "Оба одинаковы",
+        "Компонент - логическая единица UI, модуль - контейнер для компонентов, директив, пайпов, сервисов"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": "angular-41",
+      "text": "Как защитить компонент активируемый через роутер?",
+      "type": "multiple-choice",
+      "options": [
+        "Использовать route guards (CanActivate, CanDeactivate, CanLoad, Resolve)",
+        "Использовать только CanActivate",
+        "Использовать только CanDeactivate",
+        "Нельзя защитить"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "angular-42",
+      "text": "Что такое реактивное программирование? Как оно используется в Angular?",
+      "type": "multiple-choice",
+      "options": [
+        "Парадигма для синхронных операций",
+        "Парадигма программирования с потоками данных. В Angular через RxJS Observables для асинхронных операций",
+        "Парадигма только для HTTP запросов",
+        "Не используется в Angular"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "angular-43",
+      "text": "Лучшие практики безопасности в Angular?",
+      "type": "multiple-choice",
+      "options": [
+        "Только санитизация данных",
+        "Только HTTPS",
+        "Санитизация данных, Content Security Policy, HTTPS, защита от XSS, CSRF токены, валидация на сервере",
+        "Только защита от XSS"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "angular-44",
+      "text": "Разница между `BehaviorSubject` и `Observable`?",
+      "type": "multiple-choice",
+      "options": [
+        "Нет разницы",
+        "Observable хранит значение, BehaviorSubject нет",
+        "Оба хранят значение",
+        "BehaviorSubject хранит текущее значение и отправляет его новым подписчикам, Observable не хранит значение"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": "angular-45",
+      "text": "Приведите хороший пример использования `NgZone` сервиса?",
+      "type": "multiple-choice",
+      "options": [
+        "Для запуска кода вне Angular зоны (runOutsideAngular) или принудительного запуска change detection (run)",
+        "Только для runOutsideAngular",
+        "Только для run",
+        "Не используется"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "angular-46",
+      "text": "Как сделать компонент для показа сообщений об ошибках?",
+      "type": "multiple-choice",
+      "options": [
+        "Только создать компонент",
+        "Создать компонент, использовать сервис для управления состоянием, отображать через *ngIf или условный рендеринг",
+        "Только использовать сервис",
+        "Использовать только *ngIf"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "angular-47",
+      "text": "Как передать данные из дочернего компонента в родительский?",
+      "type": "multiple-choice",
+      "options": [
+        "Использовать @Input()",
+        "Использовать сервис",
+        "Использовать @Output() с EventEmitter для отправки событий родителю",
+        "Использовать глобальные переменные"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "angular-48",
+      "text": "Разница между `NgForm`, `FormGroup`, и `FormControl`?",
+      "type": "multiple-choice",
+      "options": [
+        "Нет разницы",
+        "Все три для template driven форм",
+        "Все три для reactive forms",
+        "NgForm - директива для template driven форм, FormGroup - группа полей, FormControl - одно поле в reactive forms"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": "angular-49",
+      "text": "Что такое Shared модуль?",
+      "type": "multiple-choice",
+      "options": [
+        "Модуль для общих компонентов, директив, пайпов, которые используются в нескольких модулях",
+        "Модуль для сервисов",
+        "Модуль для роутинга",
+        "Модуль для HTTP"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "angular-50",
+      "text": "Почему импортировать сервис из SharedModule в lazy loaded модуль считается плохой практикой?",
+      "type": "multiple-choice",
+      "options": [
+        "Не считается плохой практикой",
+        "Создает отдельный экземпляр сервиса для каждого lazy модуля, нарушая singleton паттерн",
+        "Только из-за размера бандла",
+        "Только из-за производительности"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "angular-51",
+      "text": "Разница между `switchMap`, `concatMap` и `mergeMap`?",
+      "type": "multiple-choice",
+      "options": [
+        "Нет разницы",
+        "Все три выполняют последовательно",
+        "switchMap отменяет предыдущие запросы, concatMap выполняет последовательно, mergeMap выполняет параллельно",
+        "Все три выполняют параллельно"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "angular-52",
+      "text": "Разница между `BehaviorSubject`, `ReplaySubject` и `AsyncSubject`?",
+      "type": "multiple-choice",
+      "options": [
+        "Нет разницы",
+        "Все три хранят все значения",
+        "Все три хранят только последнее значение",
+        "BehaviorSubject хранит текущее значение, ReplaySubject хранит последние N значений, AsyncSubject хранит только последнее значение при завершении"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": "angular-53",
+      "text": "Принцип работы `ChangeDetectionStrategy.onPush`?",
+      "type": "multiple-choice",
+      "options": [
+        "Компонент проверяется только при изменении входных свойств, событиях, async pipe, или ручном вызове detectChanges",
+        "Компонент проверяется всегда",
+        "Компонент никогда не проверяется",
+        "Компонент проверяется только при инициализации"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "angular-54",
+      "text": "Разница между чистыми и нечистыми пайпами?",
+      "type": "multiple-choice",
+      "options": [
+        "Нет разницы",
+        "Чистые пайпы выполняются только при изменении входных данных, нечистые при каждом change detection",
+        "Нечистые выполняются только при изменении входных данных",
+        "Оба выполняются одинаково"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "angular-55",
+      "text": "Назовите ключевые компоненты Angular?",
+      "type": "multiple-choice",
+      "options": [
+        "Только компоненты и директивы",
+        "Только сервисы и модули",
+        "Компоненты, директивы, пайпы, сервисы, модули, роутинг, формы, HTTP клиент",
+        "Только роутинг и формы"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "angular-56",
+      "text": "Разница между компонентом и директивой?",
+      "type": "multiple-choice",
+      "options": [
+        "Нет разницы",
+        "Директива имеет шаблон, компонент нет",
+        "Компонент используется только для сервисов",
+        "Компонент имеет шаблон и стили, директива только добавляет поведение к элементам"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": "angular-57",
+      "text": "Перечислите преимущества `HttpClient`?",
+      "type": "multiple-choice",
+      "options": [
+        "Возвращает Observables, поддержка interceptors, типизация, автоматическая JSON обработка, лучшая обработка ошибок",
+        "Только возвращает Observables",
+        "Только поддержка interceptors",
+        "Только типизация"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "angular-58",
+      "text": "Что такое пользовательский элемент (Custom Element)? Как он работает?",
+      "type": "multiple-choice",
+      "options": [
+        "Компонент только для Angular",
+        "Веб-компонент, который можно использовать в любом HTML. Работает через Web Components API",
+        "Элемент только для React",
+        "Элемент только для Vue"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "angular-59",
+      "text": "Как трансформировать Angular-компоненты в пользовательские элементы?",
+      "type": "multiple-choice",
+      "options": [
+        "Только @angular/elements",
+        "Только createCustomElement",
+        "Использовать @angular/elements, createCustomElement, registerElement",
+        "Автоматически трансформируются"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "angular-60",
+      "text": "Назовите преимущества AOT компиляции?",
+      "type": "multiple-choice",
+      "options": [
+        "Только быстрее загрузка",
+        "Только меньше размер бандла",
+        "Только раннее обнаружение ошибок",
+        "Быстрее загрузка, меньше размер бандла, раннее обнаружение ошибок, лучшая безопасность"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": "angular-61",
+      "text": "Преимущества использования сервис-воркеров в Angular приложении?",
+      "type": "multiple-choice",
+      "options": [
+        "Офлайн работа, кэширование, push уведомления, фоновая синхронизация, улучшенная производительность",
+        "Только офлайн работа",
+        "Только кэширование",
+        "Только push уведомления"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "angular-62",
+      "text": "Что такое платформа в Angular?",
+      "type": "multiple-choice",
+      "options": [
+        "Только для браузера",
+        "Абстракция для работы с различными платформами (browser, server, mobile)",
+        "Только для сервера",
+        "Только для мобильных устройств"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "angular-63",
+      "text": "Для чего используется связка `ngFor` и `trackBy`?",
+      "type": "multiple-choice",
+      "options": [
+        "Только для фильтрации",
+        "Только для сортировки",
+        "Для оптимизации рендеринга списков, trackBy помогает Angular отслеживать элементы и переиспользовать DOM",
+        "Только для группировки"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "angular-64",
+      "text": "Cтратегии обнаружения изменений в Angular?",
+      "type": "multiple-choice",
+      "options": [
+        "Только Default",
+        "Только OnPush",
+        "Нет стратегий",
+        "Default (проверяет все компоненты) и OnPush (проверяет только при изменениях входных свойств/событиях)"
+      ],
+      "correctAnswer": 3
+    }
+  ]
+}
