@@ -24,11 +24,9 @@ export default async function Home() {
       <header className="page__header">
         <div className="page__header-container">
           <div className="page__header-content">
-            <div>
+            <div className="header__logo">
               <h1 className="title title--h1">Front-end Interview Prep</h1>
-              <p className="subtitle">Подготовка к собеседованию фронтенд разработчика</p>
             </div>
-            <ThemeToggle />
           </div>
         </div>
       </header>
@@ -41,10 +39,6 @@ export default async function Home() {
           <p className="hero__description">
             Изучайте вопросы, проходите тесты и улучшайте свои знания фронтенд разработки
           </p>
-        </div>
-
-        <div className="content-box">
-          <MarkdownRenderer content={readmeContent.split('### Темы вопросов:')[0]} />
         </div>
 
         <section className="section">
@@ -122,6 +116,11 @@ export default async function Home() {
 
       <footer className="page__footer">
         <div className="page__footer-container">
+          <fieldset className="footer__theme-toggle">
+            <legend className="visually-hidden">Тема:</legend>
+            <span className="footer__theme-toggle-label" aria-hidden="true">Тема:</span>
+            <ThemeToggle />
+          </fieldset>
           <div className="footer__grid">
             <div className="footer__column">
               <h4 className="footer__title">HTML</h4>

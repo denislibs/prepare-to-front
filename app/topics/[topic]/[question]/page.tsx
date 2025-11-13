@@ -2,7 +2,6 @@ import { notFound } from 'next/navigation';
 import { getTopicById } from '@/utils/topics';
 import { readAnswerFile } from '@/utils/file-reader';
 import MarkdownRenderer from '@/components/Markdown/MarkdownRenderer';
-import ThemeToggle from '@/components/ThemeToggle';
 import Link from 'next/link';
 
 interface PageProps {
@@ -45,7 +44,6 @@ export default async function QuestionPage({ params }: PageProps) {
                 Главная
               </Link>
             </div>
-            <ThemeToggle />
           </div>
           <h1 className="title title--h2">{topicData.name}</h1>
         </div>

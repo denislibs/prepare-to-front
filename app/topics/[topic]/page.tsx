@@ -3,7 +3,6 @@ import { getTopicById } from '@/utils/topics';
 import { parseQuestionsFile } from '@/lib/md-parser';
 import Link from 'next/link';
 import Image from 'next/image';
-import ThemeToggle from '@/components/ThemeToggle';
 import { extractQuestionSlug } from '@/lib/md-parser';
 
 interface PageProps {
@@ -57,7 +56,6 @@ export default async function TopicPage({ params }: PageProps) {
               >
                 Пройти тест
               </Link>
-              <ThemeToggle />
             </div>
           </div>
         </div>

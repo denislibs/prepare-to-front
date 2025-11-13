@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./normalize.css";
 import "./globals.css";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
 
 export const metadata: Metadata = {
   title: "Front-end Interview Prep",
@@ -19,16 +13,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru" className={inter.variable} suppressHydrationWarning>
+    <html lang="ru" suppressHydrationWarning>
       <head>
+        <link rel="preload" href="https://doka.guide/fonts/graphik/graphik-regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="https://doka.guide/fonts/spot-mono/spot-mono-light.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
-                const savedTheme = localStorage.getItem('theme');
+                const savedTheme = localStorage.getItem('color-theme') || localStorage.getItem('theme');
                 const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-                const theme = savedTheme || systemTheme;
-                document.documentElement.setAttribute('data-theme', theme);
+                const theme = savedTheme || 'auto';
+                document.documentElement.setAttribute('data-theme', theme === 'auto' ? systemTheme : theme);
               })();
             `,
           }}
